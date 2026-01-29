@@ -9,7 +9,7 @@ class Product{
 		System.out.println("Enter product code :");
 		pcode = sc.nextInt();
 		System.out.println("Enter product name : ");
-		pname = sc.next();
+		pname = sc.nextLine();
 		System.out.println("Enter product price : ");
 		price = sc.nextDouble();
 	}
@@ -19,7 +19,8 @@ class Product{
 		System.out.println("Product Name : "+pname);
 		System.out.println("Product Price : "+price);
 	}
-	
+}
+class ProductDriver{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		Product p1 = new Product();
@@ -47,4 +48,3 @@ class Product{
 		sc.close();
 	}
 }
-
