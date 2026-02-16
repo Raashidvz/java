@@ -1,0 +1,5 @@
+interface BillOperations{
+	void calculate();
+}
+
+
