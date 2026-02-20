@@ -1,9 +1,12 @@
-class Bill implements BillOperations extends Product{
+class Bill implements BillOperations{
 	int orderNo;
 	String date;
-	double netAmount;
+	double netAmount=0;
 	
-	void calculate(){
-		
+	public double calculate(Product[] products){
+		for(int i=0;i<products.length;i++){
+			netAmount+=products[i].total;
+		}
+		return netAmount;
 	}
 }
