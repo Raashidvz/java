@@ -1,5 +1,3 @@
 interface BillOperations{
-	void calculate();
+	double calculate(Product[] products);
 }
-
-
