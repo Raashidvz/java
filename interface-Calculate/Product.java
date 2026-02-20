@@ -3,7 +3,7 @@ class Product{
 	String name;
 	double unitPrice,total;
 	
-	Product(int productID, int quantity,){
+	Product(int productID, int quantity,String name, double unitPrice){
 		this.productID=productID;
 		this.quantity=quantity;
 		this.name=name;
