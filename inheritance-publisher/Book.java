@@ -1,12 +1,10 @@
-class Book extends Publisher{
-	String title,author;
-	double price;
-	int pages;
-	
-	Book(String title, String author, double price, int pages){
-		this.title=title;
-		this.author=author;
-		this.price=price;
-		this.pages=pages;
-	}
+class Book extends Publisher {
+    String bookTitle;
+    double price;
+
+    Book(String publisherName, String bookTitle, double price) {
+        super(publisherName);
+        this.bookTitle = bookTitle;
+        this.price = price;
+    }
 }

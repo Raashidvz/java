@@ -1,8 +1,13 @@
-class Literature extends Book{
-	String category,language;
-	
-	Literature(String category, String language){
-		this.category=category;
-		this.language=language;
-	}
+class Literature extends Book {
+
+    Literature(String publisherName, String bookTitle, double price) {
+        super(publisherName, bookTitle, price);
+    }
+
+    void display() {
+        System.out.println("\nCategory: Literature");
+        System.out.println("Title: " + bookTitle);
+        System.out.println("Publisher: " + publisherName);
+        System.out.println("Price: " + price);
+    }
 }

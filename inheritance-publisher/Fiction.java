@@ -1,10 +1,13 @@
-class Fiction extends Fiction{
-	String genre;
-	boolean isSeries;
-	
-	Fiction(String genre, boolean isSeries){
-		//super(publisherName,address,phone,title,author,price,pages,category,language,genre,isSeries);
-		this.geenre=genre;
-		this.isSeries=isSeries;
-	}
+class Fiction extends Book {
+
+    Fiction(String publisherName, String bookTitle, double price) {
+        super(publisherName, bookTitle, price);
+    }
+
+    void display() {
+        System.out.println("\nCategory: Fiction");
+        System.out.println("Title: " + bookTitle);
+        System.out.println("Publisher: " + publisherName);
+        System.out.println("Price: " + price);
+    }
 }
